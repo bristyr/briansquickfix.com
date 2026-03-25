@@ -105,7 +105,7 @@ nav {
     justify-content: center;
     align-items: center;
     padding: 70px 20px 10px;
-    overflow: hidden;
+    overflow: visible;
 }
 
 .page > * {
@@ -464,7 +464,7 @@ textarea {
 .fade-in.visible .service-card:nth-child(6) { transition-delay: 0.3s; }
 
 /* Laptop / short-screen adjustments */
-@media (max-height: 850px) {
+@media (max-height: 1080px) {
     header {
         padding: 10px 20px 6px;
     }
@@ -633,9 +633,8 @@ textarea {
         justify-content: center;
     }
 
-    /* Services and Contact can be taller than the viewport */
-    #services,
-    #contact {
+    /* Services can be taller than the viewport */
+    #services {
         height: auto;
         min-height: 100svh;
         padding-bottom: 20px;
@@ -763,8 +762,13 @@ textarea {
     }
 
     /* Contact */
+    #contact {
+        justify-content: center;
+    }
+
     #contact h1 {
-        margin-bottom: 20px;
+        font-size: 20px;
+        margin-bottom: 10px;
     }
 
     .contact-form {
@@ -772,24 +776,27 @@ textarea {
     }
 
     .form-group {
-        margin-bottom: 10px;
+        margin-bottom: 6px;
     }
 
     label {
-        font-size: 13px;
+        font-size: 12px;
+        margin-bottom: 2px;
     }
 
     input,
     textarea {
-        padding: 9px 12px;
-        font-size: 14px;
+        padding: 7px 10px;
+        font-size: 13px;
     }
 
     textarea {
-        min-height: 80px;
+        min-height: 55px;
     }
 
     .contact-form .btn {
-        margin-top: 6px;
+        margin-top: 4px;
+        font-size: 13px;
+        padding: 8px 24px;
     }
 }
