@@ -764,6 +764,7 @@ textarea {
     /* Contact */
     #contact {
         justify-content: center;
+        overflow: hidden;
     }
 
     #contact h1 {
