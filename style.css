@@ -724,13 +724,17 @@ textarea {
     }
 
     /* Services */
+    #services {
+        justify-content: center;
+    }
+
     #services h1 {
-        margin-bottom: 20px;
+        margin-bottom: 12px;
     }
 
     .services-grid {
         grid-template-columns: 1fr 1fr;
-        gap: 12px;
+        gap: 8px;
         width: 100%;
     }
 
@@ -740,22 +744,22 @@ textarea {
     }
 
     .service-card {
-        padding: 14px 12px;
+        padding: 10px 10px;
     }
 
     .service-icon {
-        font-size: 24px;
-        margin-bottom: 6px;
+        font-size: 20px;
+        margin-bottom: 4px;
     }
 
     .service-card h3 {
-        font-size: 16px;
-        margin-bottom: 6px;
+        font-size: 14px;
+        margin-bottom: 4px;
     }
 
     .service-card li {
-        font-size: 13px;
-        padding: 2px 0;
+        font-size: 12px;
+        padding: 1px 0;
     }
 
     /* Contact */
