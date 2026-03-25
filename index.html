@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brian's Quick Fix</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -19,6 +22,7 @@
         </div>
         <nav>
             <a href="#home" class="nav-link active">home</a>
+            <a href="#testimonial" class="nav-link">testimonial</a>
             <a href="#services" class="nav-link">services</a>
             <a href="#contact" class="nav-link">contact me</a>
         </nav>
@@ -26,38 +30,40 @@
 
     <!-- Home Section -->
     <section id="home" class="page">
-        <h1>In the Fairfield area &amp; need help with technology?</h1>
+        <h1 class="fade-in">In the Fairfield area &amp; need help with technology?</h1>
 
-        <div class="two-col">
+        <div class="two-col fade-in">
             <div class="col">
                 <h2>I'm in town!</h2>
-                <p>I grew up &amp; still reside in Fairfield.</p>
-                <p>I can be at your door quickly.</p>
-                <p>I grew up with technology &amp; have loved it ever since.</p>
+                <ul class="col-list">
+                    <li>I grew up &amp; still reside in Fairfield.</li>
+                    <li>I can be at your door quickly.</li>
+                    <li>I grew up with technology &amp; have loved it ever since.</li>
+                </ul>
             </div>
             <div class="col">
                 <h2>I can help:</h2>
-                <p>Have a slow computer or need to back one up?</p>
-                <p>Is Wi-Fi weak in some rooms?</p>
-                <p>Have tons of pictures on your phone?</p>
+                <ul class="col-list">
+                    <li>Slow computer or need a backup?</li>
+                    <li>Is Wi-Fi weak in some rooms?</li>
+                    <li>Have tons of pictures on your phone?</li>
+                </ul>
             </div>
         </div>
 
-        <div class="two-col cta-row">
-            <div class="col">
-                <p class="cta-text">Please click the button below for inquiries:</p>
-                <a href="#contact" class="btn">CONTACT ME</a>
-            </div>
-            <div class="col">
-                <p class="cta-text">Please click the button below for more details:</p>
-                <a href="#services" class="btn">LEARN MORE</a>
-            </div>
+        <div class="cta-center fade-in">
+            <p class="cta-text">Services start at $50/hr — get in touch today:</p>
+            <a href="#contact" class="btn">CONTACT ME</a>
         </div>
+        <div class="scroll-hint">Scroll down to learn more ↓</div>
+    </section>
 
-        <div class="testimonial-section">
+    <!-- Testimonial Section -->
+    <section id="testimonial" class="page">
+        <div class="testimonial-section fade-in">
             <h2>Someone you can always trust.</h2>
             <div class="testimonial">
-                <div class="testimonial-photo"></div>
+                <img class="testimonial-photo" src="images/Screenshot 2026-03-24 223906.png" alt="Judy">
                 <blockquote>
                     "I couldn't figure out how to connect my printer to Wi-Fi but Brian came over and saved the day within minutes!"
                     <cite>&mdash; Judy</cite>
@@ -68,16 +74,24 @@
 
     <!-- Services Section -->
     <section id="services" class="page">
-        <h1 class="services-headline">I offer a variety of technological services for $50/hr...</h1>
-        <a href="#contact" class="btn">CONTACT ME</a>
+        <h1 class="services-headline fade-in">Services</h1>
 
-        <div class="services-grid">
+        <div class="services-grid fade-in">
+            <div class="service-card">
+                <div class="service-icon">🌐</div>
+                <h3>Websites</h3>
+                <ul>
+                    <li>Custom design</li>
+                    <li>Small business sites</li>
+                    <li>Maintenance</li>
+                </ul>
+            </div>
             <div class="service-card">
                 <div class="service-icon">💻</div>
                 <h3>Computer Issues</h3>
                 <ul>
-                    <li>Slow computer optimization</li>
-                    <li>Computer backups</li>
+                    <li>Speed optimization</li>
+                    <li>Backups</li>
                     <li>Virus removal</li>
                 </ul>
             </div>
@@ -87,43 +101,34 @@
                 <ul>
                     <li>General issues</li>
                     <li>Backups</li>
-                    <li>Advisory/Recommendations</li>
+                    <li>Advice &amp; tips</li>
                 </ul>
             </div>
             <div class="service-card">
                 <div class="service-icon">📶</div>
                 <h3>WiFi/Router</h3>
                 <ul>
-                    <li>Extended internet setups</li>
-                    <li>Solutions for router issues</li>
-                    <li>Bad Wi-Fi reception</li>
+                    <li>Range extension</li>
+                    <li>Router troubleshooting</li>
+                    <li>Weak signal fixes</li>
                 </ul>
             </div>
             <div class="service-card">
                 <div class="service-icon">📺</div>
                 <h3>Audio/Video</h3>
                 <ul>
-                    <li>Soundbar connection</li>
+                    <li>Soundbar setup</li>
                     <li>TV connection</li>
-                    <li>TV Streaming setup</li>
+                    <li>Streaming setup</li>
                 </ul>
             </div>
             <div class="service-card">
                 <div class="service-icon">🖥️</div>
                 <h3>Software</h3>
                 <ul>
-                    <li>Install/Uninstalls</li>
+                    <li>Installs &amp; removals</li>
                     <li>Tutoring</li>
-                    <li>Installs</li>
-                </ul>
-            </div>
-            <div class="service-card">
-                <div class="service-icon">🔧</div>
-                <h3>PC Hardware</h3>
-                <ul>
-                    <li>Hardware replacement</li>
-                    <li>Full PC desktop builds</li>
-                    <li>Recommendations</li>
+                    <li>Troubleshooting</li>
                 </ul>
             </div>
         </div>
@@ -131,8 +136,8 @@
 
     <!-- Contact Section -->
     <section id="contact" class="page">
-        <h1>Please fill out the form below.</h1>
-        <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <h1 class="fade-in">Please fill out the form below.</h1>
+        <form class="contact-form fade-in" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
             <div class="form-row">
                 <div class="form-group">
                     <label>First Name <span class="required">(required)</span></label>
@@ -164,13 +169,32 @@
     </section>
 
     <script>
-        // Simple nav highlighting
-        document.querySelectorAll('.nav-link').forEach(link => {
-            link.addEventListener('click', function() {
-                document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
-                this.classList.add('active');
+        // Nav highlighting on scroll
+        const sections = document.querySelectorAll('.page');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        const sectionObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    navLinks.forEach(l => l.classList.remove('active'));
+                    const active = document.querySelector(`.nav-link[href="#${entry.target.id}"]`);
+                    if (active) active.classList.add('active');
+                }
             });
-        });
+        }, { threshold: 0.5 });
+
+        sections.forEach(section => sectionObserver.observe(section));
+
+        // Fade-in on scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
     </script>
 
 </body>
