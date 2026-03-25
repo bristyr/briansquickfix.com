@@ -588,9 +588,14 @@ textarea {
 /* Mobile */
 @media (max-width: 600px) {
 
-    /* Header */
+    /* Header — fixed so it never moves regardless of scroll snap or browser chrome */
     header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
         padding: 10px 16px 8px;
+        transform: translateZ(0);
     }
 
     .logo {
@@ -615,7 +620,7 @@ textarea {
         font-size: 12px;
     }
 
-    /* Re-enable scroll snap, snap to start so tall sections don't glitch */
+    /* Scroll snap */
     html {
         scroll-snap-type: y mandatory;
     }
@@ -626,14 +631,6 @@ textarea {
         overflow: visible;
         padding: 74px 18px 20px;
         justify-content: center;
-    }
-
-    /* Fixed header — truly static, unaffected by browser chrome resizing */
-    header {
-        position: fixed;
-        width: 100%;
-        top: 0;
-        left: 0;
     }
 
     /* Services and Contact can be taller than the viewport */
