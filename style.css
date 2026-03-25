@@ -637,11 +637,8 @@ textarea {
         overflow-y: auto;
     }
 
-    /* Services can be taller than the viewport */
     #services {
-        height: auto;
-        min-height: 100svh;
-        padding-bottom: 20px;
+        overflow-y: auto;
     }
 
     /* Home */
@@ -772,43 +769,35 @@ textarea {
     }
 
     #contact h1 {
-        font-size: 18px;
-        margin-bottom: 8px;
+        font-size: 20px;
+        margin-bottom: 10px;
     }
 
     .contact-form {
         max-width: 100%;
     }
 
-    .form-row {
-        grid-template-columns: 1fr 1fr;
-        gap: 8px;
-        margin-bottom: 0;
-    }
-
     .form-group {
-        margin-bottom: 4px;
+        margin-bottom: 6px;
     }
 
     label {
-        font-size: 11px;
-        margin-bottom: 1px;
+        font-size: 12px;
+        margin-bottom: 2px;
     }
 
     input,
     textarea {
-        padding: 5px 10px;
+        padding: 7px 10px;
         font-size: 13px;
-        border-radius: 8px;
     }
 
     textarea {
-        height: 44px;
-        min-height: unset;
+        min-height: 55px;
     }
 
     .contact-form .btn {
-        margin-top: 6px;
+        margin-top: 4px;
         font-size: 13px;
         padding: 8px 24px;
     }
