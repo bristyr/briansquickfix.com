@@ -637,10 +637,6 @@ textarea {
         overflow-y: auto;
     }
 
-    #services {
-        overflow-y: auto;
-    }
-
     /* Home */
     #home {
         padding-top: 74px;
@@ -765,6 +761,8 @@ textarea {
     /* Contact */
     #contact {
         justify-content: center;
+        padding-top: 74px;
+        padding-bottom: 0;
         overflow: hidden;
     }
 
