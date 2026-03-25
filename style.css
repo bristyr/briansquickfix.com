@@ -775,6 +775,12 @@ textarea {
         max-width: 100%;
     }
 
+    .form-row {
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+        margin-bottom: 0;
+    }
+
     .form-group {
         margin-bottom: 4px;
     }
