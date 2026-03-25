@@ -195,6 +195,16 @@
         }, { threshold: 0.1 });
 
         document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+        // Disable scroll snap while a form field is focused to prevent shaking on mobile
+        document.querySelectorAll('input, textarea').forEach(el => {
+            el.addEventListener('focus', () => {
+                document.documentElement.style.scrollSnapType = 'none';
+            });
+            el.addEventListener('blur', () => {
+                document.documentElement.style.scrollSnapType = '';
+            });
+        });
     </script>
 
 </body>
