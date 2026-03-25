@@ -615,15 +615,29 @@ textarea {
         font-size: 12px;
     }
 
-    /* Pages — centered in the space below the sticky header (~74px) */
+    /* Re-enable scroll snap, snap to start so tall sections don't glitch */
+    html {
+        scroll-snap-type: y mandatory;
+    }
+
     .page {
+        scroll-snap-align: start;
         height: 100svh;
         overflow: visible;
         padding: 74px 18px 20px;
         justify-content: center;
     }
 
-    /* Contact gets min-height so the form never gets clipped */
+    /* Fixed header — truly static, unaffected by browser chrome resizing */
+    header {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    /* Services and Contact can be taller than the viewport */
+    #services,
     #contact {
         height: auto;
         min-height: 100svh;
