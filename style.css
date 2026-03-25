@@ -628,9 +628,13 @@ textarea {
     .page {
         scroll-snap-align: start;
         height: 100svh;
-        overflow: visible;
+        overflow: hidden;
         padding: 74px 18px 20px;
         justify-content: center;
+    }
+
+    #services {
+        overflow-y: auto;
     }
 
     /* Services can be taller than the viewport */
