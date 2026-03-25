@@ -764,12 +764,11 @@ textarea {
     /* Contact */
     #contact {
         justify-content: center;
-        overflow: hidden;
     }
 
     #contact h1 {
-        font-size: 20px;
-        margin-bottom: 10px;
+        font-size: 18px;
+        margin-bottom: 8px;
     }
 
     .contact-form {
@@ -777,26 +776,27 @@ textarea {
     }
 
     .form-group {
-        margin-bottom: 6px;
+        margin-bottom: 4px;
     }
 
     label {
-        font-size: 12px;
+        font-size: 11px;
         margin-bottom: 2px;
     }
 
     input,
     textarea {
-        padding: 7px 10px;
+        padding: 5px 10px;
         font-size: 13px;
+        border-radius: 8px;
     }
 
     textarea {
-        min-height: 55px;
+        min-height: 42px;
     }
 
     .contact-form .btn {
-        margin-top: 4px;
+        margin-top: 6px;
         font-size: 13px;
         padding: 8px 24px;
     }
