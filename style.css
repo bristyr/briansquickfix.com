@@ -587,25 +587,194 @@ textarea {
 
 /* Mobile */
 @media (max-width: 600px) {
-    .two-col,
-    .form-row {
-        grid-template-columns: 1fr;
+
+    /* Header */
+    header {
+        padding: 10px 16px 8px;
     }
 
-    .services-grid {
-        grid-template-columns: 1fr 1fr;
+    .logo {
+        margin-bottom: 6px;
+    }
+
+    .logo-icon {
+        font-size: 22px;
+    }
+
+    .logo-text {
+        font-size: 13px;
+        letter-spacing: 1px;
+    }
+
+    nav {
+        gap: 16px;
+        padding: 4px 0;
+    }
+
+    .nav-link {
+        font-size: 12px;
+    }
+
+    /* Pages — centered in the space below the sticky header (~74px) */
+    .page {
+        height: 100svh;
+        overflow: visible;
+        padding: 74px 18px 20px;
+        justify-content: center;
+    }
+
+    /* Contact gets min-height so the form never gets clipped */
+    #contact {
+        height: auto;
+        min-height: 100svh;
+        padding-bottom: 40px;
+    }
+
+    /* Home */
+    #home {
+        padding-top: 74px;
     }
 
     h1 {
         font-size: 22px;
+        margin-bottom: 24px;
+        line-height: 1.4;
     }
 
+    h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .two-col,
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        margin-bottom: 24px;
+    }
+
+    .col:first-child {
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+        padding-right: 0;
+        padding-bottom: 16px;
+    }
+
+    .col:last-child {
+        padding-left: 0;
+    }
+
+    .col-list li {
+        font-size: 15px;
+        margin-bottom: 8px;
+    }
+
+    .cta-text {
+        font-size: 15px;
+        margin-bottom: 12px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 10px 28px;
+    }
+
+    .scroll-hint {
+        font-size: 14px;
+        margin-top: 20px;
+    }
+
+    /* Testimonial */
     .testimonial {
         flex-direction: column;
         text-align: center;
+        padding: 28px 20px;
+        gap: 20px;
+    }
+
+    .testimonial-photo {
+        width: 110px;
+        height: 110px;
+    }
+
+    .testimonial-section h2 {
+        font-size: 26px;
+        margin-bottom: 24px;
     }
 
     blockquote {
+        font-size: 16px;
         text-align: center;
+        line-height: 1.7;
+    }
+
+    cite {
+        font-size: 15px;
+    }
+
+    /* Services */
+    #services h1 {
+        margin-bottom: 20px;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+        width: 100%;
+    }
+
+    #services .services-grid {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .service-card {
+        padding: 14px 12px;
+    }
+
+    .service-icon {
+        font-size: 24px;
+        margin-bottom: 6px;
+    }
+
+    .service-card h3 {
+        font-size: 16px;
+        margin-bottom: 6px;
+    }
+
+    .service-card li {
+        font-size: 13px;
+        padding: 2px 0;
+    }
+
+    /* Contact */
+    #contact h1 {
+        margin-bottom: 20px;
+    }
+
+    .contact-form {
+        max-width: 100%;
+    }
+
+    .form-group {
+        margin-bottom: 10px;
+    }
+
+    label {
+        font-size: 13px;
+    }
+
+    input,
+    textarea {
+        padding: 9px 12px;
+        font-size: 14px;
+    }
+
+    textarea {
+        min-height: 80px;
+    }
+
+    .contact-form .btn {
+        margin-top: 6px;
     }
 }
