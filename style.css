@@ -463,6 +463,128 @@ textarea {
 .fade-in.visible .service-card:nth-child(5) { transition-delay: 0.25s; }
 .fade-in.visible .service-card:nth-child(6) { transition-delay: 0.3s; }
 
+/* Laptop / short-screen adjustments */
+@media (max-height: 850px) {
+    header {
+        padding: 10px 20px 6px;
+    }
+
+    .logo {
+        margin-bottom: 6px;
+    }
+
+    .logo-icon {
+        font-size: 24px;
+    }
+
+    .logo-text {
+        font-size: 14px;
+    }
+
+    nav {
+        padding: 4px 0;
+        gap: 20px;
+    }
+
+    .nav-link {
+        font-size: 13px;
+    }
+
+    h1 {
+        font-size: 32px;
+        margin-bottom: 40px;
+    }
+
+    h2 {
+        font-size: 22px;
+        margin-bottom: 14px;
+    }
+
+    #home {
+        padding-top: 70px;
+    }
+
+    .two-col {
+        margin-bottom: 44px;
+        gap: 16px;
+    }
+
+    .col-list li {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .cta-text {
+        font-size: 17px;
+        margin-bottom: 10px;
+    }
+
+    .btn {
+        font-size: 15px;
+        padding: 9px 24px;
+    }
+
+    .scroll-hint {
+        font-size: 16px;
+        margin-top: 14px;
+    }
+
+    #services h1 {
+        margin-bottom: 20px;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(3, 240px);
+        gap: 16px;
+    }
+
+    .service-card {
+        padding: 14px 16px;
+    }
+
+    .service-icon {
+        font-size: 26px;
+        margin-bottom: 6px;
+    }
+
+    .service-card h3 {
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+
+    .service-card li {
+        font-size: 15px;
+        padding: 3px 0;
+    }
+
+    #contact h1 {
+        margin-bottom: 20px;
+    }
+
+    .contact-form {
+        max-width: 440px;
+    }
+
+    .form-group {
+        margin-bottom: 8px;
+    }
+
+    label {
+        font-size: 13px;
+        margin-bottom: 3px;
+    }
+
+    input,
+    textarea {
+        padding: 7px 11px;
+        font-size: 13px;
+    }
+
+    textarea {
+        min-height: 70px;
+    }
+}
+
 /* Mobile */
 @media (max-width: 600px) {
     .two-col,
